@@ -14,7 +14,6 @@ export type overviewProps = {
   goBack?: boolean;
   createDataHandler: Function;
   getDataHandler: Function;
-
 }
 
 export default function Overview(props: overviewProps) {
@@ -50,6 +49,7 @@ export default function Overview(props: overviewProps) {
     return (
       <Card style={{width : "50%", margin : "auto"}}>
         <Card.Header>
+          <h1 style = {{margin: 'auto', width:"fit-content"}}>{params.databaseName}</h1>
           <Button variant = "success" onClick={clickHandler}>Create {buttonName}</Button>
            <Link to="/">
            <Button variant = "danger" className="backButton">Back</Button>

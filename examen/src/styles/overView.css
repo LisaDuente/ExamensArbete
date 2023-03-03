@@ -12,6 +12,7 @@ td{
     text-align: center;
 }
 
-body{
-    padding: 30px;
+.btn-danger {
+    margin-left: 0.5rem;
 }
+

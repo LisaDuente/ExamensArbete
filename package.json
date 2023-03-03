@@ -1,0 +1,12 @@
+{
+  "name": "examen",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "npm install concurrently && concurrently \"cd examen/src/server && node server\" \"cd examen && npm run start\""
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

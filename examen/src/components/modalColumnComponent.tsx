@@ -41,6 +41,7 @@ export default function ModalColumnComponent(props: modalColumnProps) {
       .trim()
       .replace(";","semicolon")
       .replace(" ", "_")
+      .replace("!", "exclamationmark")
       .replace(/(\s|-|_|~)+/g, "_")
       .toLowerCase();
 
