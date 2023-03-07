@@ -36,6 +36,7 @@ export default function ModalComponent(props: modalProps) {
       .trim()
       .replace(";","semicolon")
       .replace(" ", "_")
+      .replace("!", "exclamationmark")
       .replace(/(\s|-|_|~)+/g, "_")
       .toLowerCase();
 
@@ -68,8 +69,8 @@ export default function ModalComponent(props: modalProps) {
   };
 
   // we add serveral bootstrap tags to create the form
-  // we add the onSubmit handler to the form on row 80
-  // we register the database/table name on row 89
+  // we add the onSubmit handler to the form on row 81
+  // we register the database/table name on row 90
   return (
     <div>
       <Modal show={showModal}>
